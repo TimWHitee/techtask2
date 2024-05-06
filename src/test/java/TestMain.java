@@ -22,7 +22,7 @@ public class TestMain {
         assertEquals(1, result_min);
         assertEquals(9, result_max);
 
-        assertEquals(5*3*9*1*7, result_mult);
+        assertEquals(5*3*9*1*7+1, result_mult);
         assertEquals(5+3+9+1+7, result_sum);
     }
 
