@@ -19,7 +19,7 @@ public class TestMain {
         int result_mult = Main._mult(numbers);
         int result_sum = Main._sum(numbers);
         
-        assertEquals(1 + 1, result_min);
+        assertEquals(1, result_min);
         assertEquals(9, result_max);
 
         assertEquals(5*3*9*1*7, result_mult);
