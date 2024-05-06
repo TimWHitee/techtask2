@@ -1,7 +1,6 @@
 import static org.junit.Assert.assertEquals;
 
-import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Random;
 
 import org.junit.Test;
@@ -42,7 +41,7 @@ public class TestMain {
 
         long end = System.currentTimeMillis();
         long time  = (end - start);
-        boolean flag = true ? time <= 25 : false;
+        boolean flag = true ? time <= 1 : false;
         assertEquals(true, flag);
     }
 
