@@ -1,0 +1,24 @@
+name: Run Java Tests
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        distribution: [bionic, focal]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Set up JDK
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+        distribution: ${{ matrix.distribution }}
+
+    - name: Build with Maven
+      run: mvn -B clean test
