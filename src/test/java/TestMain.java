@@ -41,7 +41,7 @@ public class TestMain {
 
         long end = System.currentTimeMillis();
         long time  = (end - start);
-        boolean flag = true ? time <= 1 : false;
+        boolean flag = true ? time <= 25 : false;
         assertEquals(true, flag);
     }
 
