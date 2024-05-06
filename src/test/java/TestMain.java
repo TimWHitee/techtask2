@@ -7,7 +7,7 @@ import java.util.Random;
 import org.junit.Test;
 
 
-public class MainTest {
+public class TestMain {
     
     @Test
     public void Main_tests() {
